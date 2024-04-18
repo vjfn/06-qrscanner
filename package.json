@@ -1,7 +1,7 @@
 {
-  "name": "06-qrscanner",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
+  "name": "QrScanner",
+  "version": "1.0.0",
+  "author": "victorjesusfernandeznoguer",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
@@ -21,6 +21,8 @@
     "@angular/platform-browser": "^17.0.2",
     "@angular/platform-browser-dynamic": "^17.0.2",
     "@angular/router": "^17.0.2",
+    "@capacitor-mlkit/barcode-scanning": "^6.0.0",
+    "@capacitor/android": "6.0.0",
     "@capacitor/app": "6.0.0",
     "@capacitor/core": "6.0.0",
     "@capacitor/haptics": "6.0.0",

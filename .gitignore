@@ -17,11 +17,15 @@ log.txt
 /.versions
 /coverage
 
+# Android
+/android
+
 # Ionic
 /.ionic
 /www
 /platforms
 /plugins
+
 
 # Compiled output
 /dist
@@ -66,3 +70,5 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+resources/android/**/*
