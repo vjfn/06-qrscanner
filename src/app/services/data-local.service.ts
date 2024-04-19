@@ -43,11 +43,11 @@ export class DataLocalService {
     switch ( registro.type ) {
 
       case 'http':
-        Browser.open( {url: registro.text} );
+        Browser.open( {url: registro.url} );
       break;
 
       case 'geo':
-        this.navCtrl.navigateForward(`/tabs/tab2/mapa/${ registro.text }`);
+        this.navCtrl.navigateForward(`/tabs/tab2/mapa/${ registro.url }`);
       break;
 
     }

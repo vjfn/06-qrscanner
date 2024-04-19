@@ -1,15 +1,27 @@
 export class Registro {
 
+    // https://flushfinder.es/
+
+    // https[0]":"//flushfinder.es/[1]
+
+    // version: https
+    // text: //flushfinder.es/
     public format: string;
     public text: string;
-    public type: string | undefined;
-    public icon: string | undefined;
-    public created: Date;
+
+    public type: string | undefined; //determinarTipo()
+    public icon: string | undefined; //determinarTipo()
+    public created: Date; //Se asigna automaticamente
+    public url:any
+
+
 
     constructor( format: string, text: string ) {
 
         this.format = format;
         this.text = text;
+
+        this.url = format+':'+text;
 
         this.created = new Date();
 
@@ -19,7 +31,7 @@ export class Registro {
 
     private determinarTipo() {
 
-        const inicioTexto = this.text.substr(0, 4);
+        const inicioTexto = this.url.substring(0, 4);
         console.log('TIPO', inicioTexto );
 
         switch ( inicioTexto ) {
@@ -27,6 +39,7 @@ export class Registro {
             case 'http':
                 this.type = 'http';
                 this.icon = 'globe';
+
             break;
 
             case 'geo:':
